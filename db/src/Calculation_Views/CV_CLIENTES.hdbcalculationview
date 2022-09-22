@@ -23,6 +23,10 @@
       <calculatedViewAttribute id="RATIO" datatype="INTEGER" expressionLanguage="COLUMN_ENGINE">
         <formula>1</formula>
       </calculatedViewAttribute>
+    
+      <calculatedViewAttribute id="NUMERO" datatype="INTEGER" expressionLanguage="COLUMN_ENGINE">
+        <formula>2</formula>
+      </calculatedViewAttribute>
     </calculatedViewAttributes>
     <input node="T_CLIENTES"/>
   </calculationView>
@@ -63,6 +67,11 @@
     <measure id="RATIO" order="1" aggregationType="count" measureType="simple">
       <descriptions defaultDescription="RATIO"/>
       <measureMapping columnObjectName="Projection_1" columnName="RATIO"/>
+    </measure>
+  
+    <measure id="NUMERO" order="9" aggregationType="count" measureType="simple">
+      <descriptions defaultDescription="NUMERO"/>
+      <measureMapping columnObjectName="Projection_1" columnName="NUMERO"/>
     </measure>
   </baseMeasures>
   <calculatedMeasures/>
